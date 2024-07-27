@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Checkout</title>
+  <style>
+    .amazon-logo{
+      object-fit: contain;
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: flex; width: 100%; background-color: white; align-items: center; justify-content: space-between; position: fixed; top: 0;right: 0; left: 0; padding-left: 30px; padding-right: 30px;"> 
+    <a href="home.html">
+      <div class=" " style="display: flex; width: 150px; margin-left: 70px;"> <img src="imgs/amazon-logo.png" alt="amazon" class="amazon-logo"> </div>
+    </a>
+    <div class=" " style="display: flex; ">  <h3>Checkout (0 items ) </h3></div>
+    <div class=" " style="display: flex; width: 150px;;">  <img src="imgs/checkout-lock-icon.png" alt=""></div>
+  </div>
+
+  <div style="margin-top: 130px; margin-left: 100px;">
+    <p style="font-weight: 700; font-size: 23px; ">Review your order</p>
+  </div>
+
+
+
+  <div style="display: grid; grid-template-columns: 1.95fr 1fr; margin-right: 0;">
+    <div style=" margin-left: 100px; margin-right: 10px; ">
+      <div class=" " style="border: solid 1px black; padding: 15px; margin-bottom: 15px;">
+        <p style="color: brown; font-weight: bold;"> Delivery date: Tuesday, June 4 </p>
+        <div style="display: grid; grid-template-columns: 0.3fr 1fr .8fr; ">
+          <div style="padding: 10px;"> <img src="imgs/1.jpg" alt="" style="height: 100px; margin-right: 20px;"> </div>
+          <div style="line-height: 10px; margin-top: -15px;">
+            <div> <p style="line-height: 25px; font-weight: bold; margin-right: 10px;"> Black and Gray Athletic Cotton Socks - 6 Pairs</p> </div>
+            <div> <p> $10.90 </p> </div>
+            <div style="display: flex; align-items: center; margin-top: -15px; "> 
+              <p style="margin-right: 15px;"> Quantity: 2 </p>
+              <a href="" style="margin-right: 15px;">Update</a>
+              <a href=""  > Delete</a>
+            </div>
+          </div>
+          <div style=" line-height: 1px;"> 
+            <p style="font-weight: bold;"> Choose a delivery option: </p>
+            <div style="display: grid; grid-template-columns: 35px 200px;">
+              <div style="display: flex; align-items: center;"> <input type="radio" name="delivery_date"></div>
+              <div> 
+                <p style="color: brown;">Tuesday, June 4 </p>
+                <p style="color: grey; font-size: 15px;"> FREE Shipping </p>
+              </div>
+              <div style="display: flex; align-items: center;"> <input type="radio" name="delivery_date"></div>
+              <div> 
+                <p style="color: brown;" >Wednesday, May 29  </p>
+                <p style="color: grey; font-size: 15px;"> $4.99 - Shipping  </p>
+              </div>
+              <div style="display: flex; align-items: center;"> <input type="radio" name="delivery_date"></div>
+              <div> 
+                <p style="color: brown;" >Monday, May 27 </p>
+                <p style="color: grey; font-size: 15px;"> $9.99 - Shipping  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" " style="border: solid 1px black; padding: 15px; margin-bottom: 15px;">
+        <p style="color: brown; font-weight: bold;"> Delivery date: Tuesday, June 4 </p>
+        <div style="display: grid; grid-template-columns: 0.3fr 1fr .8fr;  ">
+          <div style="padding: 10px;"> <img src="imgs/2.jpg" alt="" style="height: 100px; margin-right: 20px;"> </div>
+          <div style="line-height: 10px; margin-top: -15px;">
+            <div> <p style="line-height: 25px; font-weight: bold; margin-right: 10px;">  Intermediate Size Basketball </p> </div>
+            <div> <p>  $20.95  </p> </div>
+            <div style="display: flex; align-items: center; margin-top: -15px; "> 
+              <p style="margin-right: 15px;"> Quantity: 1 </p>
+              <a href="" style="margin-right: 15px;">Update</a>
+              <a href=""  > Delete</a>
+            </div>
+          </div>
+          <div style=" line-height: 1px;"> 
+            <p style="font-weight: bold;"> Choose a delivery option: </p>
+            <div style="display: grid; grid-template-columns: 35px 200px;">
+              <div style="display: flex; align-items: center;"> <input type="radio" name="delivery_date"></div>
+              <div> 
+                <p style="color: brown;">Tuesday, June 4 </p>
+                <p style="color: grey; font-size: 15px;"> FREE Shipping </p>
+              </div>
+              <div style="display: flex; align-items: center;"> <input type="radio" name="delivery_date"></div>
+              <div> 
+                <p style="color: brown;" >Wednesday, May 29  </p>
+                <p style="color: grey; font-size: 15px;"> $4.99 - Shipping  </p>
+              </div>
+              <div style="display: flex; align-items: center;"> <input type="radio" name="delivery_date"></div>
+              <div> 
+                <p style="color: brown;" >Monday, May 27 </p>
+                <p style="color: grey; font-size: 15px;"> $9.99 - Shipping  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div>
+      <div class="summary_div" style=" border: 1px solid black; padding: 10px; margin-right: 80px ; line-height: 5px; ">
+        <p class=" " style="font-weight: bold;">  Order Summary </p>
+        <div style="display: grid; grid-template-columns: 1.5fr .35fr; line-height: 0;"> 
+          <p class=" ">Items (0): </p>
+          <p class=" ">$0.00 </p>
+          <p class=" ">Shipping & handling: </p>
+          <p class=" "> $0.00 </p>
+          <p class=" ">Total before tax: </p>
+          <p class=" ">$0.00  </p>
+          <p class=" ">Estimated tax (10%): </p>
+          <p class=" ">$0.00  </p>
+        </div>
+        <hr style="width:300px; text-align:center; border-color: black; opacity: 0.2;"> 
+
+        <div style="display: grid; grid-template-columns: 1.5fr .35fr; line-height: 0; color: brown; font-weight: bold;">
+          <p class=" ">Order total: </p>
+          <p class=" ">$0.00 </p>
+        </div>
+
+        <div class="payment_paypal_div" style="display: flex; margin-top: -10px">
+          <p style=" font-size: larger; margin-right: 10px;">Use PayPal</p>
+          <input type="checkbox">
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px"> 
+          <button class="final_order_placement" style="background-color: rgb(236, 236, 21); border: 0cap; padding: 15px; width: 300px; border-radius: 10px" > Place your Order</button>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>

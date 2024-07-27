@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Amazon</title>
+  <style>
+    .amazon_logo{
+      object-fit: cover;
+      height: 35px;
+      background-color: black;
+      margin-top: 15px;
+      margin-left: 15px;
+    }
+    p{
+      color: white
+    }
+    .product_preview{
+      height: 200px;
+      width: 200px;
+      object-fit: contain;
+    }
+    .product_review{
+      height: 20px;
+    }
+    .atc_button{
+      padding: 10px;
+      background-color: rgb(206, 206, 12);
+      border: 0cap;
+      border-radius: 30px;
+      width: 200px;
+    }
+    .atc_button:hover{
+      cursor: pointer;
+    }
+    .atc_button:active{
+      background-color: rgb(237, 237, 35);
+    }
+    .div_header{
+      position: fixed;
+      right: 0;
+      left: 0;
+      top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header-->
+  <div class="div_header" style="background-color: black; display: grid; grid-template-columns: 150px 1fr 150px 150px; height: 60px;" >
+    <div class=" div_site_logo" > 
+      <a style="background-color: black; " href="home.html" style="height: 1px;">
+        <img src="imgs/amazon-logo-white.png" alt="amazon" class="amazon_logo"> 
+      </a>   
+    </div>
+    <div class=" div_search_bar" style=" height: 60px; display: flex;" > 
+      <input type="text" style="height: 60%; width: 100%;" placeholder="Search"> 
+      <div class="search_icon_div" >
+        <button style="background-color: orange; border: 0cap; height: 70%; width: 40px;">
+          <img src="imgs/search-icon.png" alt="search icon" style="height: 25px; padding-right: 5px; padding-left: 3px;">
+        </button>
+      </div>
+    </div>
+    <a href="orders.html"><div class=" div_orders" style="height: 60px;"> <p style="color: white;">Return&Orders</p></div></a>
+    <div class=" div_cart" style="display: flex;">  
+      <a href="checkout.html" style="display: flex; position: relative;">
+        <img src="imgs/cart-icon.png" alt="add to cart" style="height: 40px;"> 
+        <p style="color: white">Cart</p>
+        <p style="color: orange; position: absolute; left: 30px;top: -20px;">3</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- products-->
+  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; margin-top: 50px;">
+    <!--item1 -->
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/1.jpg" alt="" class="product_preview"></div>
+      <div class=" " style=" ">Black and Gray Athletic Cotton Socks - 6 Pairs </div>
+      <div class=" " style=" "> <img src="imgs/rating-45.png" alt="" class="product_review"> 87</div>
+      <div class=" " style=" "> $10.90 </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/2.jpg" alt="" class="product_preview"></div>
+      <div class=" " style=" "> Intermediate Size Basketball  </div>
+      <div class=" " style=" "> <img src="imgs/rating-4.png" alt="" class="product_review"> 127</div>
+      <div class=" " style=" "> $20.95  </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/3.jpg" alt="" class="product_preview"></div>
+      <div class=" " style=" "> Adults Plain Cotton T-Shirt - 2 Pack </div>
+      <div class=" " style=" "> <img src="imgs/rating-45.png" alt="" class="product_review"> 56</div>
+      <div class=" " style=" ">  $7.99  </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/4.jpg" alt="" class="product_preview"></div>
+      <div class=" " style=" "> 2 Slot Toaster - Black  </div>
+      <div class=" " style=" "> <img src="imgs/rating-5.png" alt="" class="product_review"> 2197</div>
+      <div class=" " style=" "> $19.99 </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/5.jpg" alt="" class="product_preview"></div>
+      <div class=" " style=" "> 6 Piece White Dinner Plate Set </div>
+      <div class=" " style=" "> <img src="imgs/rating-4.png" alt="" class="product_review"> 37</div>
+      <div class=" " style=" "> $20.67 </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/6.webp" alt="" class="product_preview"></div>
+      <div class=" " style=" "> 6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set  </div>
+      <div class=" " style=" "> <img src="imgs/rating-45.png" alt="" class="product_review"> 175</div>
+      <div class=" " style=" "> $34.99 </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/7.jpg" alt="" class="product_preview"></div>
+      <div class=" " style=" "> Plain Hooded Fleece Sweatshirt  </div>
+      <div class=" " style=" "> <img src="imgs/rating-45.png" alt="" class="product_review"> 317</div>
+      <div class=" " style=" "> $24.00 </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/8.jpg" alt="" class="product_preview"></div>
+      <div class=" " style=" "> Luxury Towel Set - Graphite Gray  </div>
+      <div class=" " style=" "> <img src="imgs/rating-45.png" alt="" class="product_review"> 144</div>
+      <div class=" " style=" "> $35.99 </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/9.jpg" alt="" class="product_preview"></div>
+      <div class=" " style=" "> Liquid Laundry Detergent, 110 Loads, 82.5 Fl Oz  </div>
+      <div class=" " style=" "> <img src="imgs/rating-45.png" alt="" class="product_review"> 305</div>
+      <div class=" " style=" "> $28.99 </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/10.jpg" alt="" class="product_preview"></div>
+      <div class=" " style=" "> Waterproof Knit Athletic Sneakers - Gray  </div>
+      <div class=" " style=" "> <img src="imgs/rating-4.png" alt="" class="product_review"> 89</div>
+      <div class=" " style=" "> $33.90 </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/11.jpg" alt="" class="product_preview"></div>
+      <div class=" " style=" "> Women's Chiffon Beachwear Cover Up - Black </div>
+      <div class=" " style=" "> <img src="imgs/rating-45.png" alt="" class="product_review"> 235</div>
+      <div class=" " style=" "> $20.70 </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/12.jpg" alt="" class="product_preview"></div>
+      <div class=" " style=" "> Round Sunglasses </div>
+      <div class=" " style=" "> <img src="imgs/rating-45.png" alt="" class="product_review"> 30</div>
+      <div class=" " style=" "> $15.60 </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/13.jpg" alt="" class="product_preview"></div>
+      <div class=" " style=" "> Women's Two Strap Buckle Sandals - Tan  </div>
+      <div class=" " style=" "> <img src="imgs/rating-45.png" alt="" class="product_review"> 562</div>
+      <div class=" " style=" "> $24.99 </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/14.webp" alt="" class="product_preview"></div>
+      <div class=" " style=" "> Blackout Curtains Set 4-Pack - Beige  </div>
+      <div class=" " style=" "> <img src="imgs/rating-45.png" alt="" class="product_review"> 232</div>
+      <div class=" " style=" "> $45.99 </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+    <div style="padding: 20px;">
+      <div class=" " style=" "> <img src="imgs/15.jpg" alt="" class="product_preview"></div>
+      <div class=" " style=" "> Men's Slim-Fit Summer Shorts </div>
+      <div class=" " style=" "> <img src="imgs/rating-4.png" alt="" class="product_review"> 160</div>
+      <div class=" " style=" "> $16.99 </div>
+      <div class=" " style=" ">
+        <select>
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> </div>
+      <div class=" " style=" "><button class="atc_button">Add To Cart</button> </div>
+    </div>
+
+
+  </div>
+</body>
+</html>

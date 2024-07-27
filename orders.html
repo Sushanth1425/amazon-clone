@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Orders</title>
+  <style>
+    .amazon_logo{
+      object-fit: cover;
+      height: 35px;
+      background-color: black;
+      margin-top: 15px;
+      margin-left: 15px;
+    }
+    p{
+      color: white
+    }
+    .div_header{
+      position: fixed;
+      right: 0;
+      left: 0;
+      top: 0;
+    }
+  </style>
+
+</head>
+<body>
+  <!-- header-->
+  <div class="div_header" style="background-color: black; display: grid; grid-template-columns: 150px 1fr 150px 150px; height: 60px;" >
+    <div class=" div_site_logo" > 
+      <a style="background-color: black; " href="home.html" style="height: 1px;">
+        <img src="imgs/amazon-logo-white.png" alt="amazon" class="amazon_logo"> 
+      </a>   
+    </div>
+    <div class=" div_search_bar" style=" height: 60px; display: flex;" > 
+      <input type="text" style="height: 60%; width: 100%;" placeholder="Search"> 
+      <div class="search_icon_div" >
+        <button style="background-color: orange; border: 0cap; height: 70%; width: 40px;">
+          <img src="imgs/search-icon.png" alt="search icon" style="height: 25px; padding-right: 5px; padding-left: 3px;">
+        </button>
+      </div>
+    </div>
+    <a href="orders.html"><div class=" div_orders" style="height: 60px;"> <p style="color: white;">Return&Orders</p></div></a>
+    <div class=" div_cart" style="display: flex;">  
+      <a href="checkout.html" style="display: flex;">
+        <img src="imgs/cart-icon.png" alt="add to cart" style="height: 40px;"> 
+        <p style="color: white">Cart</p>
+      </a>
+    </div>
+  </div>
+
+  <div style=" margin-left: auto; margin-right: auto; width: 70%;margin-top: 100px; "> 
+    <div > <h3 >Your Orders</h3></div>
+
+    <div style="margin-top: 50px;">
+      <div style="border: 1px solid black; background-color: rgb(227, 218, 218); display: grid; grid-template-columns: 1fr 2fr 2.5fr; padding: 10px;">
+        <div> Order Placed: <br> May 22 </div>
+        <div> Total:<br> $148.05 </div>
+        <div> Order ID: <br> bac2181a-5384-292e-64ae-69d1e3fe2727 </div>
+      </div>
+      <div style="border: 1px solid black; display: grid; grid-template-columns: 1fr 3fr 1.5fr; padding: 40px; ">
+        <img src="imgs/1.jpg" alt="" style="height: 100px; ">
+        <div style=" line-height: 30px;"> 
+          <div style="font-weight: bold; font-size: large;">Black and Gray Athletic Cotton Socks - 6 Pairs </div>
+          <div> Arriving on: May 31 </div>
+          <div> Quantity: 2 </div>
+          <div > 
+            <button style="height: 40px; display: flex; align-items: center; margin-top: 10px; background-color: rgb(218, 218, 19); border: 0cap; border-radius: 5px;"> 
+              <img src="imgs/buy-again.png" alt="" style="height: 25px; padding: 5px;"> <p style="color: black; padding: 5px;">Buy it again</p>
+            </button>
+          </div>
+        </div>
+        <div style="margin-left: 50px; margin-bottom: 180px;"> 
+          <button style=" background-color: white; border: 1px solid black; padding: 10px; width: 200px; border-radius: 5px ;"> Track Packages</button> 
+        </div>  
+
+        <img src="imgs/2.jpg" alt="" style="height: 100px; ">
+        <div style=" line-height: 30px;"> 
+          <div style="font-weight: bold; font-size: large;"> Intermediate Size Basketball  </div>
+          <div> Arriving on: May 31 </div>
+          <div> Quantity: 2 </div>
+          <div > 
+            <button style="height: 40px; display: flex; align-items: center; margin-top: 10px; background-color: rgb(218, 218, 19); border: 0cap; border-radius: 5px;"> 
+              <img src="imgs/buy-again.png" alt="" style="height: 25px; padding: 5px;"> <p style="color: black; padding: 5px;">Buy it again</p>
+            </button>
+          </div>
+        </div>
+        <div style="margin-left: 50px;"> 
+          <button style=" background-color: white; border: 1px solid black; padding: 10px; width: 200px; border-radius: 5px ;"> Track Packages</button> 
+        </div> 
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

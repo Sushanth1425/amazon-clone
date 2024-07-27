@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tracking</title>
+  <style>
+    .amazon_logo{
+      object-fit: cover;
+      height: 35px;
+      background-color: black;
+      margin-top: 15px;
+      margin-left: 15px;
+    }
+    .div_header{
+      position: fixed;
+      right: 0;
+      left: 0;
+      top: 0;
+    }
+
+  </style>
+</head>
+  <!-- header-->
+  <div class="div_header" style="background-color: black; display: grid; grid-template-columns: 150px 1fr 150px 150px; height: 60px;" >
+    <div class=" div_site_logo" style="height: 1px;" > 
+      <a style="background-color: black; " href="home.html" style="height: 1px;">
+        <img src="imgs/amazon-logo-white.png" alt="amazon" class="amazon_logo"> 
+      </a> 
+    </div>
+    <div class=" div_search_bar" style=" height: 60px; display: flex; " > 
+      <input type="text" style="height: 60%; width: 100%;" placeholder="Search"> 
+      <div class="search_icon_div" >
+        <button style="background-color: orange; border: 0cap; height: 70%; width: 40px;">
+          <img src="imgs/search-icon.png" alt="search icon" style="height: 25px; padding-right: 5px; padding-left: 3px;">
+        </button>
+      </div>
+    </div>
+    <a href="orders.html"><div class=" div_orders" style="height: 60px;"> <p style="color: white;">Return&Orders</p></div></a>
+    <div class=" div_cart" style="display: flex;">  
+      <a href="checkout.html" style="display: flex;">
+        <img src="imgs/cart-icon.png" alt="add to cart" style="height: 40px;"> 
+        <p style="color: white">Cart</p>
+      </a>
+    </div>
+  </div>
+
+  <div style="margin-top: 100px; margin-left: auto; margin-right: auto; width: 70%;">
+    <a href="orders.html"> View all orders </a>
+    <div style="line-height: 10px;">
+      <p style="font-weight: bold; font-size: 28px;"> Arriving on Friday, May 31 </p>
+      <p> Black and Gray Athletic Cotton Socks - 6 Pairs </p>
+      <p>  Quantity: 2 </p>
+      <img src="imgs/1.jpg" alt="" style="height: 150px; margin-top: 15px;">
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <p> Preparing </p>
+      <p>Shipped</p>
+      <p>Delivered</p>
+    </div>
+
+    <div class="progress_bar" style="border: 1px solid black; border-radius: 50px; height: 25px;"> </div>
+
+  </div>
+
+<body>
+  
+</body>
+</html>
